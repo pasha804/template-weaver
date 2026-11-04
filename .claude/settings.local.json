@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"demo/birthday-surprise -> HTTP %{http_code}\\\\n\" http://localhost:8080/demo/birthday-surprise)",
+      "Bash(curl -s -o /dev/null -w \"templates -> HTTP %{http_code}\\\\n\" http://localhost:8080/templates)",
+      "Bash(grep -iE \"\\\\.\\(gif|jpe?g|png|webp|mp3|mp4\\)$\")",
+      "Bash(npm install *)",
+      "Bash(mkdir -p /c/Users/USER/AppData/Local/Temp/tw-shots)",
+      "Bash(python -m http.server 5051)",
+      "Bash(curl -s -o /dev/null -w \"original galaxy dist :5051 -> %{http_code}\\\\n\" http://localhost:5051/)",
+      "Bash(node \"C:/Users/USER/AppData/Local/Temp/tw-shots/shot.js\" \"http://localhost:5051/\" \"galaxy-orig-1.png\" 1280 900 3000)",
+      "Bash(node \"C:/Users/USER/AppData/Local/Temp/tw-shots/shot.js\" \"http://localhost:8080/demo/birthday-galaxy\" \"galaxy-demo-1.png\" 1280 900 3500)",
+      "Bash(node \"C:/Users/USER/AppData/Local/Temp/tw-shots/shot.js\" \"http://localhost:8080/demo/birthday-galaxy\" \"galaxy-demo-1.png\" 1280 900 4000)",
+      "Bash(curl -s -o /dev/null -w \"orig5051:%{http_code}\\\\n\" http://localhost:5051/)",
+      "Bash(curl -s -o /dev/null -w \"demo8080:%{http_code}\\\\n\" http://localhost:8080/demo/birthday-galaxy)",
+      "Bash(node \"C:/Users/USER/AppData/Local/Temp/tw-shots/measure.js\" http://localhost:5051/ 5000 body)",
+      "Bash(node \"C:/Users/USER/AppData/Local/Temp/tw-shots/measure.js\" http://localhost:8080/demo/birthday-galaxy 5500 body)",
+      "Bash(node *)",
+      "Bash(curl -s -o /dev/null -w \"demo8080:%{http_code}\\\\n\" http://localhost:8080/demo/birthday-rose)",
+      "Bash(python -m http.server 5052)",
+      "Bash(curl -s -o /dev/null -w \"rose-orig-5052:%{http_code}\\\\n\" http://localhost:5052/)",
+      "Bash(tasklist)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/demo/anniversary-romantic)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5053/)",
+      "Bash(python -m http.server 5053)",
+      "Bash(curl -s -o /dev/null -w \"orig=%{http_code}\\\\n\" http://localhost:5053/)",
+      "Bash(grep -rln \"%\\\\`\\\\|percent\\\\|\\\\.gif\\\\|ring-rotate\\\\|Preparing something\" src)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3009)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)",
+      "Read(//tmp/claude-1000/E--template-weaver-main/89d87204-29a0-32dc-9466-b63666d491e4/**)",
+      "Bash(cd E:template-weaver-main *)",
+      "Bash(curl -s -o /dev/null -w \"8080=%{http_code}\\\\n\" http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w \"5054=%{http_code}\\\\n\" http://localhost:5054/)"
+    ]
+  }
+}
